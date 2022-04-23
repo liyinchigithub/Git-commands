@@ -2,7 +2,7 @@
 
 Git常用命令、面试复习、简单实用命令
 
-[CSDN](https://blog.csdn.net/u013302168/article/details/124360566)
+[CSDN完整文档](https://blog.csdn.net/u013302168/article/details/124360566)
 
 ​
 # 一、概念理解

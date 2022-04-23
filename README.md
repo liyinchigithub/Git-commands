@@ -478,10 +478,15 @@ git tag
 ```shell
 git ls-remote --tags origin
 ```
+
 （4）将本地tag推送到远程
 ```shell
 git push origin v1.0
 ```
+<img width="584" alt="image" src="https://user-images.githubusercontent.com/19643260/164888317-efea53bf-2991-4536-8737-ee105e3d75f9.png">
+
+也可以仅执行该句，会自动生成本地tag并推送到远程
+
 
 （5）追加标签
 

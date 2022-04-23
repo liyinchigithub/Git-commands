@@ -478,7 +478,12 @@ git tag
 ```shell
 git ls-remote --tags origin
 ```
-（4）追加标签
+（4）将本地tag推送到远程
+```shell
+git push origin v1.0
+```
+
+（5）追加标签
 
 如果我们忘了给某个提交打标签，又将它发布了，我们可以给它追加标签。
 ```shell

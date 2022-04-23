@@ -358,7 +358,34 @@ git blame <file>
 ```
 ### 14.git remote
 
+​
 远程仓库操作
+```shell
+git remote show [remote]
+git remote show https://github.com/liyinchigithub/Git-commands
+```
+
+（1）添加远程版本库
+
+一般在新建项目时使用
+```shell
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/liyinchigithub/Git-commands.git
+git push -u origin master
+```
+（2）删除远程仓库
+```shell
+git remote rm name
+```
+
+（3）修改仓库名
+```shell
+git remote rename old_name new_name 
+```
+
+​
 
 ### 15.git config 命令
 （1）显示当前的 git 配置信息

@@ -494,7 +494,7 @@ git push origin v1.0
 git add .
 git commit -m "first commit"
 git push origin master
-git origin tag v1.0
+git push origin v1.0
 
 ```
 
@@ -504,11 +504,23 @@ git origin tag v1.0
 git add .
 git commit -m "first commit"
 git push origin master
-git tag -a v1.0 -m "release 1.0 version"
-git push origin :v1.0
+git tag -a v1.1 -m "release 1.0 version"
+git tag
+git push origin :v1.1
 ```
 
-（6）追加标签
+（6）删除本地tag
+```shell
+git tag -d v1.0
+```
+
+
+（7）删除远程tag
+```shell
+git push origin :refs/tags/v1.0
+```
+
+（8）追加标签
 
 如果我们忘了给某个提交打标签，又将它发布了，我们可以给它追加标签。
 ```shell

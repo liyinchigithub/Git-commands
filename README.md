@@ -496,12 +496,17 @@ git commit -m "first commit"
 git push origin master
 git origin tag v1.0
 
-或者
-git tag -a v1.0 -m "release 1.0 version"
-git push origin :v1.0
-
 ```
 
+或者
+
+```shell
+git add .
+git commit -m "first commit"
+git push origin master
+git tag -a v1.0 -m "release 1.0 version"
+git push origin :v1.0
+```
 
 （6）追加标签
 

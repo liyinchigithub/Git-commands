@@ -251,6 +251,29 @@ git push origin master
 
 ### 11.git merge
 
+​
+（1）开发分支（dev）上的代码达到上线的标准后，要合并到 master 分支
+
+```shell
+git checkout dev
+git pull
+git checkout master
+git merge dev
+git push -u origin master
+```
+
+（2）当master代码改动了，需要更新开发分支（dev）上的代码
+
+```shell
+git checkout master 
+git pull 
+git checkout dev
+git merge master 
+git push -u origin dev
+```
+
+​
+
 ### 12.git rebase
 
 当两个分支不在一条线上，需要执行 merge 操作时使用该命令。
@@ -440,7 +463,7 @@ git add 仅能记录添加、改动的动作，删除的动作需靠 git rm �
 到一个重要的阶段，并希望永远记住那个特别的提交快照，你可以使用 git tag 给它打上标签
 
 ```shell
-git tag -a v1.0 
+git tag -a v1.0 -m "release 1.0 version" 
 ```
 （2）追加标签
 

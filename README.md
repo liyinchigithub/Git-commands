@@ -203,7 +203,7 @@ git push origin --delete 远程分支名称
 ```
 如何本地分支已提交到远程仓库，想删除这个分支，除了删除本地分支，还需要远程分支也要删除，以上两个命令都要执行一次。
 
-### 7.git status
+### 8.git status
 
 查看当前分支状态
 ```shell
@@ -219,12 +219,12 @@ Changes to be committed:
     new file:   hello.php
 ```
 
-### 8.git checkout
+### 9.git checkout
 切换分支
 
 
 
-### 9.git push
+### 10.git push
 
 （1）将本地的 master 分支推送到 origin 主机的 master 分支。
 ```shell
@@ -249,9 +249,9 @@ git push origin master
 ```
 远程项目仓库对提交上来的分支代码还有做merge操作，才可以把分支代码合并到master中
 
-### 10.git merge
+### 11.git merge
 
-### 11.git rebase
+### 12.git rebase
 
 当两个分支不在一条线上，需要执行 merge 操作时使用该命令。
 
@@ -283,7 +283,7 @@ git rebase --continue // 继续 rebase
 
 git push
 ```
-### 12.git revert
+### 13.git revert
 
 git revert：放弃某次提交。
 
@@ -319,7 +319,7 @@ git revert commit_id -m 2 // 第二个提交点
 git push
 ```
 
-### 13.git log
+### 14.git log
 （1）查看提交历史
 
 
@@ -356,7 +356,7 @@ git log --oneline --before={3.weeks.ago} --after={2020-04-23} --no-merges
 git blame <file>
 
 ```
-### 14.git remote
+### 15.git remote
 
 ​
 远程仓库操作
@@ -387,7 +387,7 @@ git remote rename old_name new_name
 
 ​
 
-### 15.git config 命令
+### 16.git config 命令
 （1）显示当前的 git 配置信息
 ```shell
 git config --list
@@ -430,5 +430,37 @@ git checkout -- <file>
 （5）git add 和 git rm 区别，
 
 git add 仅能记录添加、改动的动作，删除的动作需靠 git rm 来完成。
+
+
+​
+## 17.git tag
+
+（1）打标签
+
+到一个重要的阶段，并希望永远记住那个特别的提交快照，你可以使用 git tag 给它打上标签
+
+```shell
+git tag -a v1.0 
+```
+（2）追加标签
+
+如果我们忘了给某个提交打标签，又将它发布了，我们可以给它追加标签。
+```shell
+$ git tag -a v0.9 85fc7e7
+$ git log --oneline --decorate --graph
+*   d5e9fc2 (HEAD -> master) Merge branch 'change_site'
+|\  
+| * 7774248 (change_site) changed the runoob.php
+* | c68142b 修改代码
+|/  
+* c1501a2 removed test.txt、add runoob.php
+* 3e92c19 add test.txt
+* 3b58100 (tag: v0.9) 第一次版本提交
+*
+```
+（3）查看标签
+```shell
+git tag
+```
 
 ​

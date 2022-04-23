@@ -465,6 +465,9 @@ git add 仅能记录添加、改动的动作，删除的动作需靠 git rm �
 ```shell
 git tag -a v1.0 -m "release 1.0 version" 
 ```
+
+<img width="595" alt="image" src="https://user-images.githubusercontent.com/19643260/164888051-9a489b23-f6e3-4f12-bde7-ad795f557605.png">
+
 （2）追加标签
 
 如果我们忘了给某个提交打标签，又将它发布了，我们可以给它追加标签。

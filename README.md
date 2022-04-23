@@ -488,7 +488,22 @@ git push origin v1.0
 也可以仅执行该句，会自动生成本地tag并推送到远程
 
 
-（5）追加标签
+（5）完整的标签操作
+
+```shell
+git add .
+git commit -m "first commit"
+git push origin master
+git origin tag v1.0
+
+或者
+git tag -a v1.0 -m "release 1.0 version"
+git push origin :v1.0
+
+```
+
+
+（6）追加标签
 
 如果我们忘了给某个提交打标签，又将它发布了，我们可以给它追加标签。
 ```shell
